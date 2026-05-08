@@ -1,128 +1,132 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HUNANIMA - Machines Agricoles Simples</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fefefe;
-      color: #333;
-    }
-    header {
-      background-color: #2e7d32; /* Vert foncé */
-      color: #fdd835; /* Jaune vif */
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-size: 1.2em;
-    }
-    nav {
-      background-color: #fdd835;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #2e7d32;
-    }
-    .hero {
-      background: url('https://i.pinimg.com/550x/a9/df/51/a9df5172829f8c05f5b92f97553d41ae.jpg') no-repeat center center/cover;
-      height: 350px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 4px #000;
-      font-size: 2em;
-    }
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-    section h2 {
-      color: #2e7d32;
-      margin-bottom: 20px;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .gallery img {
-      width: 280px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    footer {
-      background-color: #2e7d32;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-    footer p {
-      margin: 5px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan Style Foods LLC | Purely Crafted Excellence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;600&family=Outfit:wght@200;400;700&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Outfit', sans-serif; background-color: #0a0a0a; color: #e5e5e5; }
+        .heading-font { font-family: 'Unbounded', sans-serif; }
+        .gradient-text { background: linear-gradient(to right, #94fbab, #10b981); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hover-lift { transition: transform 0.4s ease; }
+        .hover-lift:hover { transform: translateY(-10px); }
+    </style>
 </head>
-<body>
+<body class="selection:bg-emerald-500/30">
 
-  <header>
-    <h1>HUNANIMA</h1>
-    <p>Machines Agricoles Simples et Fiables</p>
-  </header>
+    <!-- Header Navigation -->
+    <nav class="fixed w-full z-50 py-6 px-10 flex justify-between items-center bg-black/40 backdrop-blur-xl border-b border-white/5">
+        <div class="heading-font text-xl tracking-tighter font-semibold">VEGAN<span class="text-emerald-500">STYLE</span></div>
+        <div class="hidden md:flex space-x-12 text-[10px] uppercase tracking-[0.3em] font-light">
+            <a href="#concept" class="hover:text-emerald-400 transition">Concept</a>
+            <a href="#philosophy" class="hover:text-emerald-400 transition">Philosophy</a>
+            <a href="#retail" class="hover:text-emerald-400 transition">Retail</a>
+            <a href="#legal" class="hover:text-emerald-400 transition">Privacy</a>
+            <a href="#contact" class="px-6 py-2 border border-emerald-500/50 text-emerald-400 hover:bg-emerald-500 hover:text-black transition duration-500">Inquiry</a>
+        </div>
+    </nav>
 
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#gallery">Galerie</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <!-- Hero Section (Visual Dominance) -->
+    <section class="min-h-screen relative flex items-center px-10 lg:px-24">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=2000" class="w-full h-full object-cover opacity-30 grayscale hover:grayscale-0 transition duration-1000" alt="Background">
+        </div>
+        <div class="relative z-10 max-w-4xl">
+            <span class="text-emerald-500 uppercase tracking-widest text-sm mb-4 block">Specialty Food Retailers</span>
+            <h1 class="heading-font text-5xl md:text-8xl leading-tight mb-8 font-semibold">The New Era of <br><span class="gradient-text">Gourmet Ethics</span>.</h1>
+            <p class="text-xl text-gray-400 font-light leading-relaxed max-w-2xl mb-12">Crafting high-end vegan culinary experiences that bridge the gap between conscious living and unparalleled taste. Welcome to the collective of Vegan Style Foods LLC.</p>
+            <div class="flex space-x-6">
+                <a href="#concept" class="bg-emerald-600 text-black px-12 py-5 font-bold hover:bg-emerald-400 transition">Explore Collection</a>
+            </div>
+        </div>
+    </section>
 
-  <div class="hero">
-    <p>Votre partenaire pour des machines agricoles durables</p>
-  </div>
+    <!-- Content Section 1: The Concept -->
+    <section id="concept" class="py-32 px-10 lg:px-24 grid lg:grid-cols-2 gap-20">
+        <div>
+            <h2 class="heading-font text-4xl mb-10">Revolutionizing <br>Plant-Based Retail</h2>
+            <p class="text-gray-500 leading-loose mb-6">Vegan Style Foods LLC, headquartered in Lake Oswego, OR, operates at the pinnacle of the specialty food sector. Our approach to retail is defined by a curated selection of organic, ethically sourced, and high-performance nutritional products.</p>
+            <p class="text-gray-500 leading-loose">We believe that gourmet food should not compromise on values. Every item in our catalog is rigorously vetted for environmental impact, ingredient purity, and culinary sophistication.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=600" class="rounded-2xl hover-lift shadow-2xl shadow-emerald-500/10" alt="Food 1">
+            <img src="https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?auto=format&fit=crop&q=80&w=600" class="rounded-2xl mt-12 hover-lift shadow-2xl shadow-emerald-500/10" alt="Food 2">
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>À propos de nous</h2>
-    <p>
-      Chez <strong>HUNANIMA</strong>, nous nous spécialisons dans la fabrication et la distribution de 
-      <strong>machines agricoles simples</strong> pour faciliter le travail des agriculteurs. 
-      Nos solutions combinent <em>durabilité, efficacité et innovation</em> afin de répondre aux besoins de toutes les exploitations.
-    </p>
-  </section>
+    <!-- Content Section 2: Philosophy (Long Text) -->
+    <section id="philosophy" class="py-32 bg-zinc-900/50 border-y border-white/5 px-10 lg:px-24">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="heading-font text-4xl mb-12 italic">"Conscious Consumption is the Highest Form of Style."</h2>
+            <div class="space-y-8 text-gray-400 text-lg leading-relaxed font-light">
+                <p>Our philosophy is rooted in the belief that the global food system is undergoing a fundamental transformation. At Vegan Style Foods LLC, we are not just observers of this change; we are its architects. Our retail initiatives focus on making gourmet plant-based nutrition accessible and desirable.</p>
+                <p>We work directly with local farmers and innovative food scientists to ensure that our supply chain is as transparent as it is efficient. By leveraging modern technology through our upcoming mobile platforms, we aim to provide a seamless bridge between local producers and the global consumer.</p>
+            </div>
+        </div>
+    </section>
 
-  <section id="gallery">
-    <h2>Nos Machines</h2>
-    <div class="gallery">
-      <img src="http://ogden_images.s3.amazonaws.com/www.motherearthnews.com/images/2014/11/22234423/Boaz-Mini-Combine-jpg.jpg" alt="Mini moissonneuse">
-      <img src="https://krs-agro.ru/products/zagotovka_kormov/elho/19/7.jpg" alt="Machine agricole">
-      <img src="https://img.mod-network.net/files/images/6218ac69d37fb/SimpleFarmSilov1000_6222.jpg" alt="Équipement agricole simple">
-    </div>
-  </section>
+    <!-- Content Section 3: Retail Grid -->
+    <section id="retail" class="py-32 px-10 lg:px-24">
+        <h2 class="heading-font text-4xl mb-20 text-center">Our Retail Focus</h2>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="p-10 bg-zinc-900 border border-white/5 hover:border-emerald-500/30 transition duration-500">
+                <span class="text-emerald-500 text-4xl mb-6 block font-bold">01</span>
+                <h3 class="heading-font text-xl mb-4">Artisanal Selection</h3>
+                <p class="text-sm text-gray-500 leading-loose">Carefully selected gourmet oils, plant-based cheeses, and organic seasonings that meet the highest standards of culinary professionals.</p>
+            </div>
+            <div class="p-10 bg-zinc-900 border border-white/5 hover:border-emerald-500/30 transition duration-500">
+                <span class="text-emerald-500 text-4xl mb-6 block font-bold">02</span>
+                <h3 class="heading-font text-xl mb-4">Nutritional Tech</h3>
+                <p class="text-sm text-gray-500 leading-loose">Integrating AI-driven inventory management to ensure the freshest produce is always available through our digital storefronts.</p>
+            </div>
+            <div class="p-10 bg-zinc-900 border border-white/5 hover:border-emerald-500/30 transition duration-500">
+                <span class="text-emerald-500 text-4xl mb-6 block font-bold">03</span>
+                <h3 class="heading-font text-xl mb-4">Eco-Distribution</h3>
+                <p class="text-sm text-gray-500 leading-loose">A commitment to zero-waste packaging and carbon-neutral logistics for every order processed by our retail collective.</p>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contactez-nous</h2>
-    <p><strong>Email :</strong> admin@tyusex.shop</p>
-    <p><strong>Téléphone :</strong> +33 7 38 50 26 36</p>
-    <p><strong>Adresse :</strong> Avenue Baratier, Montmorency, 95160, France</p>
-  </section>
+    <!-- Legal & Privacy Section -->
+    <section id="legal" class="py-24 bg-black px-10 lg:px-24">
+        <div class="max-w-5xl mx-auto border-t border-white/10 pt-20">
+            <h2 class="heading-font text-2xl mb-8">Data Privacy & Guidelines</h2>
+            <div class="bg-zinc-900 p-8 text-xs text-gray-500 leading-relaxed max-h-60 overflow-y-auto border border-white/5">
+                <p class="mb-4"><strong>Effective Date: May 8, 2026</strong></p>
+                <p class="mb-4">Vegan Style Foods LLC ("The Company") is committed to protecting the privacy of our users. This privacy policy describes our practices regarding the collection, use, and disclosure of personal information in connection with our retail mobile applications and website.</p>
+                <p class="mb-4"><strong>Information Collection:</strong> We collect information you provide directly, such as your name, email address, and shipping information when you use our services. We use this data only to fulfill orders and enhance the user experience of our app.</p>
+                <p><strong>Third-Party Compliance:</strong> We do not sell or trade your data. All transactions are processed through secure, encrypted payment gateways in accordance with global financial standards.</p>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 HUNANIMA - Tous droits réservés.</p>
-  </footer>
+    <!-- Footer & Contact -->
+    <footer id="contact" class="py-32 px-10 lg:px-24 bg-emerald-950/20">
+        <div class="flex flex-col md:flex-row justify-between items-start">
+            <div class="mb-12 md:mb-0">
+                <h4 class="heading-font text-3xl mb-8 font-semibold">Ready to <br><span class="text-emerald-500">Join the Style?</span></h4>
+                <div class="space-y-4">
+                    <p class="text-lg uppercase tracking-widest text-emerald-500 font-bold">Inquiry Desk</p>
+                    <a href="mailto:admin@veganstylefoods.org" class="text-3xl font-light hover:text-emerald-400 block transition">admin@veganstylefoods.org</a>
+                    <a href="tel:+16673877498" class="text-3xl font-light hover:text-emerald-400 block transition">+1 667-387-7498</a>
+                </div>
+            </div>
+            <div class="text-right">
+                <p class="text-gray-500 text-sm mb-6">Corporate Office</p>
+                <p class="text-gray-400 leading-loose">
+                    16055 Boones Ferry Rd<br>
+                    Lake Oswego, OR, 97035-4364<br>
+                    United States
+                </p>
+            </div>
+        </div>
+        <div class="mt-32 pt-8 border-t border-white/5 text-center text-[10px] tracking-[0.5em] text-gray-600 uppercase">
+            &copy; 2026 Vegan Style Foods LLC. Built for Excellence.
+        </div>
+    </footer>
 
 </body>
 </html>
